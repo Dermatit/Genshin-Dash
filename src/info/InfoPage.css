@@ -68,8 +68,8 @@ section:last-child {
         padding: 0vw 8vw 0vw 8vw;
     }
     .img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 }
 @media (max-width: 992px) {
