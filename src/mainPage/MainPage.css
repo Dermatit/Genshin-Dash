@@ -1,0 +1,113 @@
+.hide {
+    display: none;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    padding-top: 6vh;
+}
+.link-box {
+    overflow: hidden;
+    padding: 5px;
+}
+.link {
+    background: white;
+    width: 400px;
+    position: relative;
+    transform: translate(0, -10%);
+}
+.link-slider {
+    transition: 0.5s;
+    transform: translate(0, -15%);
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background: black;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    height: 55px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.links-container:first-child {
+    padding-top: 10px;
+}
+.links-container:last-child {
+    padding-bottom: 10px;
+}
+.links-container :last-child {
+    padding-right: 0;
+}
+.links-container :first-child {
+    padding-left: 0;
+}
+@media (max-width: 3840px) {
+    .link-box {
+        width: 235px;
+        height: 450px;
+    }
+    .link-box img {
+        width: 100%;
+    }
+    .linkClass :first-child {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 1920px) {
+
+}
+@media (max-width: 1200px) {
+    .link {
+        transform: translate(0, -10%);
+    }
+    .link-slider {
+        transform: translate(0px, -1%);
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .link-box {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 12px;
+        height: 5vh;
+    }
+    .link-box {
+        height: 250px;
+        padding: 2.5px;
+    }
+    .links-container {
+        padding-bottom: 5px;
+    }
+    .links-container:first-child {
+        padding-top: 5px;
+    }
+    .links-container:last-child {
+        padding-bottom: 5px;
+    }
+}
+@media (max-width: 375px) {
+    .links {
+        padding-top: 8vh;
+    }
+}

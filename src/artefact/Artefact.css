@@ -1,0 +1,33 @@
+.artefact-img, .artefact-stats, .artefact-variants {
+    display: flex;
+    padding: 0 20px;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    height: 60px;
+}
+.artefact-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background: black;
+    width: 510px;
+}
+.art-icon {
+    width: 50px;
+}
+
+
+@media (max-width: 1400px) {
+    .artefact-container :last-child {
+        margin-bottom: 0;
+    }
+    .artefact-container {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    .artefact-container :last-child {
+        margin-bottom: 0;
+    }
+}
