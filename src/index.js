@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import MainPage from './mainPage/mainPage';
 import './Index.css';
 
-SmoothScroll({ stepSize: 90 })
+SmoothScroll({ stepSize: 100 })
 
 ReactDOM.render(
   <React.StrictMode>

@@ -75,14 +75,14 @@ h1 {
     .link {
         transform: translate(0, -10%);
     }
+    .links, .links-container, .link-box {
+        width: 100%;
+    }
     .link-slider {
         transform: translate(0px, -1%);
     }
     h1 {
         font-size: 15px;
-    }
-    .link-box {
-        width: 100%;
     }
 }
 @media (max-width: 992px) {

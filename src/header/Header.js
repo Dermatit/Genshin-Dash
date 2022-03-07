@@ -16,7 +16,7 @@ function Header({stateChanger}) {
                 <div className="header-width">
 
                     <SuperButton stateChanger={stateChanger} logoRef={logoRef}/>
-                    <div className="logo" ref={logoRef}><img src="char-images/logo.svg"/></div>
+                    <div className="logo" ref={logoRef}><img src="logo.svg"/></div>
                 </div>
             </header>
         </>

@@ -14,7 +14,7 @@ function Info({eventCatcher}) {
                             <div className="rarity">{elem.rarity}</div>
                             <a href="https://genshin.gg/tier-list" title="По данным сайта Genshin.gg" target="_blank"><div className="tierlist">{elem.tierlist}</div></a>
                         </div>
-                        <img src={elem.img} alt={elem.name} className="img" style={{backgroundImage:`url(${elem.bcImg})`}}/>
+                        <img src={elem.img} alt={elem.name} className="img" style={{background:`url(${elem.bcImg}) no-repeat center`, backgroundSize: "cover"}}/>
                     </div>,
                     <div className="container">{elem.description}</div>);
         }
