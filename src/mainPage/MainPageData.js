@@ -14,7 +14,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Eula.png"
+        "cardImage" : "/card-images/Eula.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Eula.png"
     },
     {
         "img" : "/images/character/Hutao.png",
@@ -29,7 +30,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Hutao.png"
+        "cardImage" : "/card-images/Hutao.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Hutao.png"
     },
     {
         "img" : "/images/character/Mona.png",
@@ -44,7 +46,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Mona.png"
+        "cardImage" : "/card-images/Mona.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Mona.png"
     },
     {
         "img" : "/images/character/Albedo.png",
@@ -59,7 +62,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Albedo.png"
+        "cardImage" : "/card-images/Albedo.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Albedo.png"
     },
     {
         "img" : "/images/character/Amber.png",
@@ -74,7 +78,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Amber.png"
+        "cardImage" : "/card-images/Amber.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Amber.png"
     },
     {
         "img" : "/images/character/Ayaka.png",
@@ -89,7 +94,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Ayaka.png"
+        "cardImage" : "/card-images/Ayaka.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Ayaka.png"
     },
     {
         "img" : "/images/character/Barbara.png",
@@ -104,7 +110,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Barbara.png"
+        "cardImage" : "/card-images/Barbara.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Barbara.png"
     },
     {
         "img" : "/images/character/Beidou.png",
@@ -119,7 +126,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Beidou.png"
+        "cardImage" : "/card-images/Beidou.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Beidou.png"
     },
     {
         "img" : "/images/character/Itto.png",
@@ -134,7 +142,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Itto.png"
+        "cardImage" : "/card-images/Itto.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Itto.png"
     },
     {
         "img" : "/images/character/Jean.png",
@@ -149,7 +158,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Jean.png"
+        "cardImage" : "/card-images/Jean.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Jean.png"
     },
     {
         "img" : "/images/character/Kaeya.png",
@@ -164,7 +174,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Kaeya.png"
+        "cardImage" : "/card-images/Kaeya.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Kaeya.png"
     },
     {
         "img" : "/images/character/Kazuha.png",
@@ -179,7 +190,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Kazuha.png"
+        "cardImage" : "/card-images/Kazuha.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Kazuha.png"
     },
     {
         "img" : "/images/character/Keqing.png",
@@ -194,7 +206,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Keqing.png"
+        "cardImage" : "/card-images/Keqing.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Keqing.png"
     },
     {
         "img" : "/images/character/Klee.png",
@@ -209,7 +222,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Klee.png"
+        "cardImage" : "/card-images/Klee.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Klee.png"
     },
     {
         "img" : "/images/character/Kokomi.png",
@@ -224,7 +238,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Kokomi.png"
+        "cardImage" : "/card-images/Kokomi.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Kokomi.png"
     },
     {
         "img" : "/images/character/Lisa.png",
@@ -239,7 +254,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Lisa.png"
+        "cardImage" : "/card-images/Lisa.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Lisa.png"
     },
     {
         "img" : "/images/character/Ningguang.png",
@@ -254,7 +270,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Ningguang.png"
+        "cardImage" : "/card-images/Ningguang.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Ningguang.png"
     },
     {
         "img" : "/images/character/Noelle.png",
@@ -269,7 +286,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Noelle.png"
+        "cardImage" : "/card-images/Noelle.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Noelle.png"
     },
     {
         "img" : "/images/character/Qiqi.png",
@@ -284,7 +302,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Qiqi.png"
+        "cardImage" : "/card-images/Qiqi.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Qiqi.png"
     },
     {
         "img" : "/images/character/Raiden.png",
@@ -299,7 +318,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Raiden.png"
+        "cardImage" : "/card-images/Raiden.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Raiden.png"
     },
     {
         "img" : "/images/character/Razor.png",
@@ -314,7 +334,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Razor.png"
+        "cardImage" : "/card-images/Razor.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Razor.png"
     },
     {
         "img" : "/images/character/Rosaria.png",
@@ -329,7 +350,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Rosaria.png"
+        "cardImage" : "/card-images/Rosaria.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Rosaria.png"
     },
     {
         "img" : "/images/character/Sara.png",
@@ -344,7 +366,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Sara.png"
+        "cardImage" : "/card-images/Sara.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Sara.png"
     },
     {
         "img" : "/images/character/Sayu.png",
@@ -359,7 +382,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Sayu.png"
+        "cardImage" : "/card-images/Sayu.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Sayu.png"
     },
     {
         "img" : "/images/character/Shenhe.png",
@@ -374,7 +398,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Shenhe.png"
+        "cardImage" : "/card-images/Shenhe.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Shenhe.png"
     },
     {
         "img" : "/images/character/Sucrose.png",
@@ -389,7 +414,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Sucrose.png"
+        "cardImage" : "/card-images/Sucrose.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Sucrose.png"
     },
     {
         "img" : "/images/character/Tartaglia.png",
@@ -404,7 +430,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Tartaglia.png"
+        "cardImage" : "/card-images/Tartaglia.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Tartaglia.png"
     },
     {
         "img" : "/images/character/Thoma.png",
@@ -419,7 +446,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Thoma.png"
+        "cardImage" : "/card-images/Thoma.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Thoma.png"
     },
     {
         "img" : "/images/character/Venti.png",
@@ -434,7 +462,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Venti.png"
+        "cardImage" : "/card-images/Venti.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Venti.png"
     },
     {
         "img" : "/images/character/Xiangling.png",
@@ -449,7 +478,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Xiangling.png"
+        "cardImage" : "/card-images/Xiangling.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Xiangling.png"
     },
     {
         "img" : "/images/character/Xiao.png",
@@ -464,7 +494,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Xiao.png"
+        "cardImage" : "/card-images/Xiao.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Xiao.png"
     },
     {
         "img" : "/images/character/Xingqiu.png",
@@ -479,7 +510,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Xingqiu.png"
+        "cardImage" : "/card-images/Xingqiu.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Xingqiu.png"
     },
     {
         "img" : "/images/character/Xinyan.png",
@@ -494,7 +526,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Xinyan.png"
+        "cardImage" : "/card-images/Xinyan.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Xinyan.png"
     },
     {
         "img" : "/images/character/Yanfei.png",
@@ -509,7 +542,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Yanfei.png"
+        "cardImage" : "/card-images/Yanfei.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Yanfei.png"
     },
     {
         "img" : "/images/character/Yoimiya.png",
@@ -524,7 +558,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Yoimiya.png"
+        "cardImage" : "/card-images/Yoimiya.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Yoimiya.png"
     },
     {
         "img" : "/images/character/YunJin.png",
@@ -539,7 +574,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/YunJin.png"
+        "cardImage" : "/card-images/YunJin.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/YunJin.png"
     },
     {
         "img" : "/images/character/Zhongli.png",
@@ -554,7 +590,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Zhongli.png"
+        "cardImage" : "/card-images/Zhongli.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Zhongli.png"
     },
     {
         "img" : "/images/character/Diluc.png",
@@ -569,7 +606,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Diluc.png"
+        "cardImage" : "/card-images/Diluc.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Diluc.png"
     },
     {
         "img" : "/images/character/Chongyun.png",
@@ -584,7 +622,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Chongyun.png"
+        "cardImage" : "/card-images/Chongyun.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Chongyun.png"
     },
     {
         "img" : "/images/character/Diona.png",
@@ -599,7 +638,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Diona.png"
+        "cardImage" : "/card-images/Diona.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Diona.png"
     },
     {
         "img" : "/images/character/Fischl.png",
@@ -614,7 +654,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Fischl.png"
+        "cardImage" : "/card-images/Fischl.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Fischl.png"
     },
     {
         "img" : "/images/character/Ganyu.png",
@@ -629,7 +670,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Ganyu.png"
+        "cardImage" : "/card-images/Ganyu.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Ganyu.png"
     },
     {
         "img" : "/images/character/Gorou.png",
@@ -644,7 +686,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Gorou.png"
+        "cardImage" : "/card-images/Gorou.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Gorou.png"
     },
     {
         "img" : "/images/character/Bennett.png",
@@ -659,7 +702,8 @@ const cardData = [
         "rotation" : "Ротации",
         "party" : "Отряды",
         "conclusion" : "Заключение",
-        "cardImg" : "/card-images/Bennett.png"
+        "cardImage" : "/card-images/Bennett.png",
+        "cardImageLowResolution" : "/card-images-low-resolution/Bennett.png"
     },
 ]
 export default cardData;

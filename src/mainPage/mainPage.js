@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './MainPage.css';
 import '../General.css';
 import Weapon from '../weapon/Weapon.js';
@@ -44,16 +44,27 @@ function MainPage() {
                 break;
             }
             else {
-                b++;
-                tempKeeper.push(<div className="link-box">
-                    <div className="link-slider" 
-                    onMouseEnter={(e) => {if (screenSeeker > 1200) {e.currentTarget.style.transform = 'translate(0, -1%)'}}} 
-                    onMouseLeave={(e) => {if (screenSeeker > 1200) {e.currentTarget.style.transform = 'translate(0, -15%)'}}} 
-                    onClick={showCard}>
-                        <h1 className="link-name" data-v={cardData[i].name}>{cardData[i].rusName}</h1>
-                        <img data-v={cardData[i].name} className="link" src={cardData[i].cardImg} alt={cardData[i].name}/>
-                    </div>
-                </div>);
+                if (screenSeeker > 1200) {
+                    b++;
+                    tempKeeper.push(<div className="link-box">
+                        <div className="link-slider" 
+                        onMouseEnter={(e) => e.currentTarget.style.transform = 'translate(0, -1%)'} 
+                        onMouseLeave={(e) => e.currentTarget.style.transform = 'translate(0, -15%)'} 
+                        onClick={showCard}>
+                            <h1 className="link-name" data-v={cardData[i].name}>{cardData[i].rusName}</h1>
+                            <img data-v={cardData[i].name} className="link" src={cardData[i].cardImage} alt={cardData[i].name}/>
+                        </div>
+                    </div>);
+                }
+                else {
+                    b++;
+                    tempKeeper.push(<div className="link-box">
+                        <div className="link-slider" onClick={showCard}>
+                            <h1 className="link-name" data-v={cardData[i].name}>{cardData[i].rusName}</h1>
+                            <img data-v={cardData[i].name} className="link" src={cardData[i].cardImageLowResolution} alt={cardData[i].name}/>
+                        </div>
+                    </div>);
+                }
             }
         }
     }
