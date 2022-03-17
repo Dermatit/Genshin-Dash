@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
-import './SuperButton.css';
+import React, { useState } from 'react'
 
-function SuperButton({ stateChanger, logoRef }) {
+import { pageDisplayAction } from '../redux/actions'
+import { useDispatch } from 'react-redux'
 
-    const [[buttonStyler, buttonText, pageCheck], setbuttonStyler] = useState(["void-button", "", false]);
+import './SuperButton.css'
+
+export default function SuperButton({ logoRef }) {
+
+    const dispatch = useDispatch()
+
+    const [[buttonStyler, buttonText, pageCheck], setbuttonStyler] = useState(["void-button", "", false])
 
     window.onscroll = () => {
         if (pageCheck) {
@@ -11,37 +17,33 @@ function SuperButton({ stateChanger, logoRef }) {
         }
         else {
             if (window.scrollY > 100) {
-                setbuttonStyler(["back-button", "↑"]);
-                logoRef.current.style.display = "none";
+                setbuttonStyler(["back-button", "↑"])
+                logoRef.current.style.display = "none"
             }
             else {
-                setbuttonStyler(["void-button", ""]);
-                logoRef.current.style.display = "";
+                setbuttonStyler(["void-button", ""])
+                logoRef.current.style.display = ""
             }
         }
     }
     window.onclick = (event) => {
         if (event.target.className === "link" || event.target.className === "link-name") {
-            setbuttonStyler(["back-button", "←", true]);
-            logoRef.current.style.display = "none";
+            setbuttonStyler(["back-button", "←", true])
+            logoRef.current.style.display = "none"
         }
     }
     const superButtonClickScroll = () => {
         if (window.scrollY > 100) {
-            window.scrollTo({top: 0});
+            window.scrollTo({top: 0})
         }
         else {
-            stateChanger("links", "hide");
-            setbuttonStyler(["void-button", "", false]);
-            logoRef.current.style.display = "";
+            dispatch(pageDisplayAction('links', 'hide'))
+            setbuttonStyler(["void-button", "", false])
+            logoRef.current.style.display = ""
         }       
     }
     
     return (
-        <>
-            <div className={buttonStyler} onClick={superButtonClickScroll}>{buttonText}</div>
-        </>
-    );
+        <div className={buttonStyler} onClick={superButtonClickScroll}>{buttonText}</div>
+    )
 }
-
-export default SuperButton;

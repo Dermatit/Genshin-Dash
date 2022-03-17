@@ -1,42 +1,20 @@
-import React, { useState } from 'react';
-import './Rotation.css';
-import rotationData from'./RotationData.js';
-import useOut from '../megaHooks.js';
+import { useState, useEffect } from 'react'
+import './Rotation.css'
+import {RotationReccomendation, RotationText} from './RotationChildren'
 
-function Rotation({eventCatcher}) {
-    
-    const artefact = useOut("rotation", eventCatcher, "Ротации");
+export default function Rotation() {
 
-    const [rotationTextOut, setRotationTextOut] = useState("");
-    const [rotationsOut, setRotationsOut] = useState("");
+    const [containerRender, setContainerRender] = useState(false)
+    const [content, setContent] = useState()
 
-    const [rotationClass, setRotationClass] = useState("hide");
-
-    const showRotation = (event) => {
-
-        rotationClass === "hide" ? setRotationClass("container") : setRotationClass("hide");
-
-        rotationData.forEach((elem,i) => {
-            if (event.target.dataset.v === elem.name)    {
-                setRotationsOut(elem.rotation.map((elem) => { return <div className="rotation-info">{elem}</div> }));
-                setRotationTextOut(elem.text.map((elem) => { return <div className="rotation-text">{elem}</div> }));
-            }
-        });
-    }
+    useEffect(()=> {
+        containerRender? setContent([<RotationReccomendation/>, <RotationText/>]) : setContent(null)
+    }, [containerRender])
 
     return (
-        <>  
-            <section>
-                <div onClick={showRotation}>{artefact}</div>
-                <div className={rotationClass}>
-                    {rotationsOut}
-                </div>
-                <div className={rotationClass}>
-                {rotationTextOut}
-            </div>
-            </section>
-        </>
-    );
+        <section>
+            <div className="rotation" onClick={() => setContainerRender(!containerRender)}>Ротации</div>
+            {content}
+        </section>
+    )
 }
-
-export default Rotation;

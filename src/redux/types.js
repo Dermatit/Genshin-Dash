@@ -1,0 +1,2 @@
+export const CHARACTER_CHECK = 'CHARACTER_CHECK';
+export const PAGE_DISPLAY = 'PAGE_DISPLAY';

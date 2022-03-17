@@ -1,14 +1,21 @@
-import React from 'react';
-import SmoothScroll from 'smoothscroll-for-websites';
-import ReactDOM from 'react-dom';
-import MainPage from './mainPage/mainPage';
-import './Index.css';
+import React from 'react'
+import SmoothScroll from 'smoothscroll-for-websites'
+import ReactDOM from 'react-dom'
 
-SmoothScroll({ stepSize: 100 })
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import { rootReducer } from './redux/reducer.js'
+
+import MainPage from './mainPage/mainPage'
+import './Index.css'
+
+SmoothScroll({ stepSize: 111 })
+const store = createStore(rootReducer)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <MainPage/>
-  </React.StrictMode>,
+    <Provider store={store}>
+      <MainPage/>
+    </Provider>,
+
   document.getElementById('root')
-);
+)

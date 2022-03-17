@@ -1,30 +1,25 @@
-import React, { useState } from 'react';
-import cardData from '../mainPage/MainPageData.js';
-import './InfoPage.css';
+import CharacterInfo from './InfoChildren.js'
+import cardData from '../mainPage/MainPageData.js'
+import './InfoPage.css'
 
-function Info({eventCatcher}) {
+import { useSelector } from 'react-redux'
 
-    let info = [];
-
-    cardData.map((elem) => {
-        if (eventCatcher === elem.name)    {
-            info.push(<div className="char-card-container">
-                        <div className="char-short-info">
-                            <div className="name">{elem.rusName}</div>
-                            <div className="rarity">{elem.rarity}</div>
-                            <a href="https://genshin.gg/tier-list" title="По данным сайта Genshin.gg" target="_blank"><div className="tierlist">{elem.tierlist}</div></a>
-                        </div>
-                        <img src={elem.img} alt={elem.name} className="img" style={{background:`url(${elem.bcImg}) no-repeat center`, backgroundSize: "cover"}}/>
-                    </div>,
-                    <div className="container">{elem.description}</div>);
-        }
-    });
+export default function Info() {
+    const characterCheck = useSelector(state => state.characterCheck)
 
     return (
-        <section>
-            {info}
-        </section>
-    );
+        cardData.map((elem) => {
+            if (characterCheck === elem.name) {
+            return <CharacterInfo 
+                name={elem.name} 
+                ruName={elem.rusName} 
+                img={elem.img} 
+                backgroundImg={elem.bcImg} 
+                rarity={elem.rarity} 
+                description={elem.description} 
+                tierlist={elem.tierlist}
+                />
+            }
+        })
+    )
 }
-
-export default Info;

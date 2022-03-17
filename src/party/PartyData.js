@@ -1,71 +1,17 @@
-import React from 'react';
-
 const partyData = [   
     {
         "name" : "Eula",
         "party": [
-            [
-                {
-                    "img" : "/char-images/Eula.png"
-                },
-                {
-                    "img" : "/char-images/Rosaria.png"
-                },
-                {
-                    "img" : "/char-images/Bennett.png"
-                },
-                {
-                    "img" : "/char-images/Fischl.png"
-                }
-            ],
-            [
-                {
-                    "img" : "/char-images/Xiao.png"
-                },
-                {
-                    "img" : "/char-images/Jean.png"
-                },
-                {
-                    "img" : "/char-images/Amber.png"
-                },
-                {
-                    "img" : "/char-images/Kazuha.png"
-                }
-            ]
+            [ "/char-images/Eula.png", "/char-images/Rosaria.png", "/char-images/Bennett.png", "/char-images/Fischl.png" ],
+            [ "/char-images/Xiao.png", "/char-images/Jean.png", "/char-images/Amber.png", "/char-images/Kazuha.png" ]
         ],
         "text" : [<>Таким образом реализация <b>намеченных</b> плановых заданий позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. С другой стороны консультация с широким активом влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</>]
     },
     {
         "name" : "Hutao",
         "party": [
-            [
-                {
-                    "img" : "/char-images/HuTao.png"
-                },
-                {
-                    "img" : "/char-images/Rosaria.png"
-                },
-                {
-                    "img" : "/char-images/Xingqiu.png"
-                },
-                {
-                    "img" : "/char-images/Zhongli.png"
-                }
-            ],
-            [
-                {
-                    "img" : "/char-images/Hutao.png"
-                },
-                {
-                    "img" : "/char-images/Sucrose.png"
-                },
-                {
-                    "img" : "/char-images/Xingqiu.png"
-                },
-                {
-                    "img" : "/char-images/Zhongli.png"
-                }
-            ]
+            [ "/char-images/Eula.png", "/char-images/Rosaria.png", "/char-images/Bennett.png", "/char-images/Fischl.png" ],
+            [ "/char-images/Xiao.png", "/char-images/Jean.png", "/char-images/Amber.png", "/char-images/Kazuha.png" ]
         ],
         "text" : [<>Таким образом реализация <b>намеченных</b> плановых заданий позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. С другой стороны консультация с широким активом влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</>]
     }

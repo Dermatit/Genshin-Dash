@@ -1,42 +1,21 @@
-import React, { useState } from 'react';
-import './Party.css';
-import partyData from'./PartyData.js';
-import useOut from '../megaHooks.js';
+import { useEffect, useState } from 'react'
 
-function Party({eventCatcher}) {
+import './Party.css'
+import {PartyCharacters, PartyText} from './PartyChildren'
 
-    const artefact = useOut("party", eventCatcher, "Отряды");
+export default function Party() {
+    const [containerRender, setContainerRender] = useState(false)
 
-    const [partiesOut, setPartiesOut] = useState("");
-    const [partiesText, setPartiesText] = useState("");
+    const [content, setContent] = useState()
 
-    const [partyClass, setPartyClass] = useState("container");
-
-    const showParty = (event) => {
-
-        partyClass === "hide" ? setPartyClass("container") : setPartyClass("hide");
-
-        partyData.forEach((elem) => {
-            if (event.target.dataset.v === elem.name)    {
-                setPartiesOut(<div className={partyClass}>
-                    {elem.party.map((elem) => { return <div className="char-container">{elem.map((elem) => { return <img className="char-icon" src={elem.img}/>})}</div>})}
-                </div>);
-                setPartiesText(<div className={partyClass}>
-                   <div className="party-text">{elem.text}</div>
-                </div>)
-            }
-        });
-    }
+    useEffect(()=> {
+        containerRender? setContent([<PartyCharacters/>, <PartyText/>]) : setContent(null)
+    }, [containerRender])
 
     return (
-        <>
-            <section>
-                <div onClick={showParty}>{artefact}</div>
-                {partiesOut}
-                {partiesText}
-            </section>
-        </>
-    );
+        <section>
+            <div className="party" onClick={() => setContainerRender(!containerRender)}>Отряды</div>
+            {content}
+        </section>
+    )
 }
-
-export default Party;
