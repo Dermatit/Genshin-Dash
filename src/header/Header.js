@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import SuperButton from '../superButton/SuperButton.js'
+import SuperButton from './superButton/SuperButton.js'
 import './Header.css'
 
 export default function Header() {

@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
-
-import { pageDisplayAction } from '../redux/actions'
+import { useState } from 'react'
+import { pageDisplayAction } from '../../redux/actions'
 import { useDispatch } from 'react-redux'
-
 import './SuperButton.css'
 
 export default function SuperButton({ logoRef }) {

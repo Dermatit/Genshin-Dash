@@ -1,20 +1,16 @@
-import { useState, useEffect } from 'react'
-import './Rotation.css'
+import { useState } from 'react'
+import { useRender } from '../gigaHook'
 import {RotationReccomendation, RotationText} from './RotationChildren'
+import './Rotation.css'
 
 export default function Rotation() {
 
-    const [containerRender, setContainerRender] = useState(false)
-    const [content, setContent] = useState()
-
-    useEffect(()=> {
-        containerRender? setContent([<RotationReccomendation/>, <RotationText/>]) : setContent(null)
-    }, [containerRender])
+    const [boolean, setBoolean] = useState(false)
 
     return (
         <section>
-            <div className="rotation" onClick={() => setContainerRender(!containerRender)}>Ротации</div>
-            {content}
+            <div className="rotation" onClick={() => setBoolean(!boolean)}>Ротации</div>
+            {useRender([<RotationReccomendation/>, <RotationText/>], boolean)}
         </section>
     )
 }

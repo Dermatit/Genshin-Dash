@@ -1,20 +1,16 @@
-import { useState, useEffect } from 'react'
-import './Weapon.css'
+import { useState } from 'react'
+import { useRender } from '../gigaHook'
 import { WeaponRecommendation, WeaponText } from './WeaponChildren'
+import './Weapon.css'
 
 export default function Weapon() {
 
-    const [containerRender, setContainerRender] = useState(false)
-    const [content, setContent] = useState()
-
-    useEffect(()=> {
-        containerRender? setContent([<WeaponRecommendation/>, <WeaponText/>]) : setContent(null)
-    }, [containerRender])
+    const [boolean, setBoolean] = useState(false)
 
     return (
         <section>
-            <div className="weapons" onClick={() => setContainerRender(!containerRender)}>Оружие</div>
-            {content}
+            <div className="weapons" onClick={() => setBoolean(!boolean)}>Оружие</div>
+            {useRender([<WeaponRecommendation/>, <WeaponText/>], boolean)}
         </section>
     )
 }

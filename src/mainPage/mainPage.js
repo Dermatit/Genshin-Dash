@@ -16,7 +16,7 @@ import CharacterLinks from './CharacterLinks'
 export default function MainPage() {
     const [linkClass, mainInfo] = useSelector(state => state.pageDisplay)
 
-    const [keyGen, setKey] = useState("key" + Math.floor(Math.random() * 10000))
+    const [keyGen, setKey] = useState()
 
     const [screenSeeker, setScreenSeeker] = useState(window.innerWidth)
     window.addEventListener('resize', ()=> setScreenSeeker(window.innerWidth))
@@ -25,7 +25,7 @@ export default function MainPage() {
         <main>
             <Header />
 
-            <div className={linkClass} key={screenSeeker}>
+            <div className={linkClass} key={screenSeeker} onClick={() => setKey("key" + Math.floor(Math.random() * 10000))}>
                 <CharacterLinks screenSize={screenSeeker}/>
             </div>
 

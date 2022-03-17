@@ -1,21 +1,16 @@
-import { useEffect, useState } from 'react'
-
-import './Party.css'
+import { useState } from 'react'
+import { useRender } from '../gigaHook'
 import {PartyCharacters, PartyText} from './PartyChildren'
+import './Party.css'
 
 export default function Party() {
-    const [containerRender, setContainerRender] = useState(false)
 
-    const [content, setContent] = useState()
-
-    useEffect(()=> {
-        containerRender? setContent([<PartyCharacters/>, <PartyText/>]) : setContent(null)
-    }, [containerRender])
+    const [boolean, setBoolean] = useState(false)
 
     return (
         <section>
-            <div className="party" onClick={() => setContainerRender(!containerRender)}>Отряды</div>
-            {content}
+            <div className="party" onClick={() => setBoolean(!boolean)}>Отряды</div>
+            {useRender([<PartyCharacters/>, <PartyText/>], boolean)}
         </section>
     )
 }
