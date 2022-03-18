@@ -72,7 +72,7 @@ export const artefactData = [
             },
             {
                 "name" : "Эмблема рассеченной судьбы",
-                "link" : "/artefact-images/EmblemOFtheSeveredFate.png"
+                "link" : "/artefact-images/EmblemOfTheSeveredFate.png"
             },
             {
                 "name" : "Горящая алая ведьма",
@@ -129,7 +129,7 @@ export const artefactData = [
             },
             {
                 "name" : "Эмблема рассеченной судьбы",
-                "link" : "/artefact-images/EmblemOFtheSeveredFate.png"
+                "link" : "/artefact-images/EmblemOfTheSeveredFate.png"
             },
         ],
         "stats" : ["Сила атаки %", "Крит. шанс", "Бонус Электро", "Крит. урон"],
