@@ -33,5 +33,6 @@ section {
 @media (max-width: 767px) {
     .container {
         width: 100%;
+        font-size: 18px;
     }
 }
