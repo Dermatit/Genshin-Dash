@@ -14,8 +14,7 @@ export function ArtefactParameters() {
                                 <img className="artefact-icon" src={elem.link}/>
                             </div>
                         )}</div>,
-                        <div className='artefact-container'>{elem.stats.map((elem) => <div className="artefact-stats">{elem}</div>)}</div>,
-                        <div className='artefact-container'>{elem.variants.map((elem) => <div className="artefact-variants">{elem}</div>)}</div>
+                        <div className='artefact-container'>{elem.stats.map((elem) => <div className="artefact-stats">{elem}</div>)}</div>
                     ]
                 }
             })
