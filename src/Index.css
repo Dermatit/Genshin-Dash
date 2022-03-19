@@ -1,3 +1,7 @@
+/* 
+	Вообще часто используют в разработке фигни для автоформатирования текста,
+	чтобы самому не париться (например eslint, prettier и т.д.)
+*/
 body {
 	font-family: Helvetica, Verdana, Arial;
     background: #eeeeee;
@@ -13,6 +17,11 @@ main {
     flex-direction: column;
     min-height: 100%;
 }
+
+/* 
+	Ты и можешь называть стили как хочешь, но чаще всего следуют определенному стилю в разработке
+	https://docs.ckan.org/en/ckan-2.7.3/contributing/css.html#naming
+*/
 .cardInfoClass {
     flex: 1 1 auto;
 }

@@ -8,6 +8,7 @@ export default function Info() {
     const characterCheck = useSelector(state => state.characterCheck)
 
     return (
+				// тут тоже key нужен (смотри вообще в консоль разработчика в браузере, там ведь все про это написано)
         cardData.map((elem) => {
             if (characterCheck === elem.name) {
             return <CharacterInfo 
@@ -21,5 +22,7 @@ export default function Info() {
                 />
             }
         })
+				// а лучше используй
+				// <CharacterInfo {...cardData.find(elem => characterCheck === elem.name)} />
     )
 }

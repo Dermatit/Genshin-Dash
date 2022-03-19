@@ -8,6 +8,9 @@ const initialState = {
     mainInfo: 'hide'
 }
 
+// combineReducers хорошо использовать когда нужно разделить много reducer'ов на отдельные файлы
+// вместе со своими экшенами, тут как-то бессмыслено
+
 export const characterCheck = (state = initialState.characterCheck, action) => {
     switch (action.type) {
         case CHARACTER_CHECK: return action.payload
