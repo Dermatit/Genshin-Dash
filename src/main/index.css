@@ -19,25 +19,6 @@
     flex-wrap: wrap;
     width: 980px;
 }
-.link-box {
-    overflow: hidden;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.link-box:nth-child(-n+4) {
-    margin-top: 10px;
-}
-.link {
-    background: white;
-    width: 400px;
-    position: relative;
-    transform: translate(0, -10%);
-}
-.link-slider {
-    transition: 0.5s;
-    transform: translate(0, -15%);
-    cursor: pointer;
-}
 h1 {
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -70,59 +51,57 @@ h1 {
 .links-container :first-child {
     padding-left: 0;
 }
+.container {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    align-self: center;
+    margin: 50px 0px 50px 0px;
+}
+.artefacts, .weapons, .rotation, .party, .conclusion {
+    font-size: 30px;
+    cursor: pointer;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media (max-width: 3840px) {
-    .link-box {
-        width: 235px;
-        height: 450px;
-    }
-    .link-box img {
-        width: 100%;
-    }
     .linkClass :first-child {
         padding-top: 10px;
     }
 }
-@media (max-width: 1920px) {
-    .link-box {
-        width: 235px;
+@media (max-width: 1400px) {
+    .container {
+        width: 100%;
     }
-
 }
 @media (max-width: 1200px) {
-    .link {
-        transform: translate(0, -10%);
-    }
-    .link-box {
-        width: 25%;
-        padding: 0;
-        margin: 0;
-    }
-    .link-box:nth-child(-n+4) {
-        margin-top: 0;
+    .container {
+        width: 60vw;
     }
     .links {
         width: auto;
-    }
-    .link-slider {
-        transform: translate(0px, -1%);
     }
     h1 {
         font-size: 15px;
     }
 }
-/* зачем? */
 @media (max-width: 992px) {
+    main {
+        background: white;
+    }
 }
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+        font-size: 19px;
+    }
     h1 {
         font-size: 12px;
         height: 5vh;
-    }
-    .link-box {
-        height: 250px;
-    }
-    .link-box:nth-child(-n+4) {
-        margin-top: 0;
     }
     .links-container {
         padding-bottom: 5px;

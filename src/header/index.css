@@ -13,8 +13,29 @@ header {
     display: flex;
     justify-content: center;
 }
+.back-button {
+    background: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    cursor: pointer;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: self-start;
+    transition: 0.5s;
+}
+.back-button:hover {
+    background: rgb(65, 65, 65);
+}
+.void-button {
+    width: 0.0000001px;
+}
 
 @media (max-width: 3840px) {
+    .back-button {
+        height: 2.5vh;
+    }
     .logo img {
         width: 1vw;
     }
@@ -28,6 +49,9 @@ header {
 @media (max-width: 1920px) {
     .logo img {
         width: 20px;
+    }
+    .back-button {
+        height: 25px;
     }
 }
 @media (max-width: 1200px) {

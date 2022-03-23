@@ -1,7 +1,7 @@
 export default function CharacterInfo({name, ruName, img, backgroundImg, rarity, description, tierlist}) { 
     return (
         <section>
-            <div className="char-card-container">
+            <div className="char-card-container" key={name}>
                 <div className="char-short-info">
                     <div className="name">{ruName}</div>
                     <div className="rarity">{rarity}</div>
@@ -11,5 +11,5 @@ export default function CharacterInfo({name, ruName, img, backgroundImg, rarity,
             </div>
             <div className="container">{description}</div>
         </section>
-    )
+    );
 }
