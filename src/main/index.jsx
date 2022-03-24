@@ -10,14 +10,16 @@ import Info from '../info/index.jsx';
 import CharacterLinks from './SubComponent/index.jsx';
 
 export default function MainPage() {
-    const [linkClass, mainInfo] = useSelector(state => state.pageDisplay);  
+    const [linkClass, mainInfo] = useSelector(state => state.pageDisplay);
+    const characterCheck = useSelector(state => state.characterCheck);
+
     return (
         <main>
             <Header />
             <div className={linkClass}>
                 <CharacterLinks/>
             </div>
-            <div className={mainInfo}>
+            <div className={mainInfo} key={characterCheck}>
                 <div className="main-info-container">
                     <Info />
                     <Party />

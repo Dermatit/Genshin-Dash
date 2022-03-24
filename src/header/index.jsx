@@ -8,7 +8,7 @@ export default function Header() {
 
 	const [pageCheck, setPageCheck] = useState(false);
 	const pageCheckHandler = () => setPageCheck(pageCheck => !pageCheck);
-	window.onclick = (e) => e.target.className === "link" ? pageCheckHandler() : null;
+	window.onclick = (e) => e.target.className === 'link' || e.target.className === 'link-name' ? pageCheckHandler() : null;
     
 	const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -24,13 +24,13 @@ export default function Header() {
 			return <div className='back-button' onClick={()=> {pageCheckHandler(); dispatch(pageDisplayAction('links', 'hide'))}}>←</div>;
 		}
 		else {
-			return <div className="logo"><img src="logo.svg"/></div>;
+			return <div className='logo'><img src='logo.svg'/></div>;
 		}
 	}
 
     return (
         <header>
-            <div className="header-width">
+            <div className='header-width'>
 				{superButton()}
             </div>
         </header>
