@@ -1,4 +1,3 @@
-// charactersData тут актуальнее
 const partyData = [   
     {
         "name" : "Eula",

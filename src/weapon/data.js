@@ -1,7 +1,6 @@
 const weaponData = [   
     {
         "name" : "Eula",
-				// ну weapons же!
         "weapon" : [
             {
                 "naming" : "Песнь разбитых сосен",
