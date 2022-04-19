@@ -4,6 +4,6 @@ import './index.css';
 
 export default function CharacterLinks() {
     return (
-        cardData.map((elem) => <CharacterLink key={elem.name} name={elem.name} ruName={elem.ruName} img={elem.cardImage}/>)
+        cardData.map((elem) => <CharacterLink key={elem.name} {...elem}/>)
     );
 }

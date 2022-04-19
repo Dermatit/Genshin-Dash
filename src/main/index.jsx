@@ -10,7 +10,7 @@ import Info from '../info/index.jsx';
 import CharacterLinks from './SubComponent/index.jsx';
 
 export default function MainPage() {
-    const [linkClass, mainInfo] = useSelector(state => state.pageDisplay);
+    const [linkClass, mainInfo] = useSelector(state => state.styles);
     const characterCheck = useSelector(state => state.characterCheck);
 
     return (

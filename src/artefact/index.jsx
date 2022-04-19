@@ -4,12 +4,12 @@ import './index.css';
 
 export default function Artefact() {
 
-    const [boolean, setBoolean] = useState(false)
+    const [isRender, setIsRender] = useState(false)
 
     return (
         <section>
-            <div className="artefacts" onClick={() => setBoolean(!boolean)}>Артефакты</div>
-            {boolean && <Artefacts />}
+            <div className="artefacts" onClick={() => setIsRender(!isRender)}>Артефакты</div>
+            {isRender && <Artefacts />}
         </section>
     )
 }

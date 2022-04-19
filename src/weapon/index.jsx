@@ -3,11 +3,11 @@ import { Weapons } from './SubComponent';
 import './index.css';
 
 export default function Weapon() {
-    const [boolean, setBoolean] = useState(false);
+    const [isRender, setIsRender] = useState(false);
     return (
         <section>
-            <div className="weapons" onClick={() => setBoolean(!boolean)}>Оружие</div>
-            {boolean && <Weapons />}
+            <div className="weapons" onClick={() => setIsRender(!isRender)}>Оружие</div>
+            {isRender && <Weapons />}
         </section>
     );
 }

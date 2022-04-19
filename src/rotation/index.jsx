@@ -4,12 +4,12 @@ import './index.css';
 
 export default function Rotation() {
 
-    const [boolean, setBoolean] = useState(false);
+    const [isRender, setIsRender] = useState(false);
 
     return (
         <section>
-            <div className="rotation" onClick={() => setBoolean(!boolean)}>Ротации</div>
-            {boolean && <Rotations />}
+            <div className="rotation" onClick={() => setIsRender(!isRender)}>Ротации</div>
+            {isRender && <Rotations />}
         </section>
     );
 }
